@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+  rms-user-mongodb:
+    image: mongo
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodb_data:/data/db
+
+volumes:
+  mongodb_data:
+    driver: local
