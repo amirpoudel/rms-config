@@ -2,7 +2,7 @@ const {Kafka} =require('kafkajs');
 
 const kafka = new Kafka({
     clientId: 'rms-kafka',
-    brokers: ['192.168.1.80:9092']
+    brokers: ['kafka:9092']
 })
 
 export async function kafkaInit() {
